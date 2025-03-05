@@ -1,0 +1,133 @@
+<template>
+     <div class="bg-dark">
+        <div class="container page-title">
+            <h3 class="title">Contact Us</h3>
+            <p><span class="material-symbols-outlined primary-color">
+                    home
+                </span> <a href="#">Home</a> <span class="material-symbols-outlined">
+                    chevron_right
+                </span> <span>Contact Us</span></p>
+        </div>
+    </div>
+    <!-- page title ends -->
+
+    <!-- contact address section  -->
+    <div class="container p-4">
+        <div class="medium-2 large-3 gap-2">
+            <div class="address-item">
+                <img src="../assets/envelop.png" alt="envelop">
+                <h4 class="heading-4">Email Address</h4>
+                <p>info@webmail.com</p>
+                <p>jobs@webexample.com</p>
+            </div>
+            <div class="address-item">
+                <img src="../assets/envelop.png" alt="envelop">
+                <h4 class="heading-4">Email Address</h4>
+                <p>info@webmail.com</p>
+                <p>jobs@webexample.com</p>
+            </div>
+            <div class="address-item">
+                <img src="../assets/envelop.png" alt="envelop">
+                <h4 class="heading-4">Email Address</h4>
+                <p>info@webmail.com</p>
+                <p>jobs@webexample.com</p>
+            </div>
+        </div>
+    </div>
+    <!-- contact address section  -->
+
+    <!-- form with map section  -->
+    <div class="contact-form-map mb-2">
+        <section class="container p-4">
+            <div class="contact-form">
+                <h4 class="heading-4 mb-1">Get A Quote</h4>
+                <form>
+                    <div class="medium-2 align-center gap-2">
+                        <div>
+                            <label for="name"></label>
+                            <input id="name" type="text" placeholder="Enter Your Name">
+                        </div>
+                        <div>
+                            <label for="email"></label>
+                            <input id="email" type="email" placeholder="Enter Your Email">
+                        </div>
+                        <div>
+                            <label for="select-services"></label>
+                            <select id="select-services">
+                                <option value="Select Service Type" selected disabled>Select Service Type</option>
+                                <option value="Property Management">Property Management</option>
+                                <option value="Mortgage Service">Mortgage Service</option>
+                                <option value="Consulting Service">Consulting Service</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="phone"></label>
+                            <input type="tel" id="phone" placeholder="Enter Your Phone Number">
+                        </div>
+                    </div>
+                    <div class="my-2">
+                        <label for="message"></label>
+                        <textarea rows="6" id="message" placeholder="Enter Message..."></textarea>
+                    </div>
+                    <div class="flex gap-1">
+                        <div>
+                            <label for="checkbox"></label>
+                            <input type="checkbox" id="checkbox"> 
+                        </div>
+                        <p> Save my name, email, and website in this browser for the next time I comment.
+                        </p>
+                    </div>
+                    <button class="btn btn-primary mt-2">GET A FREE SERVICE</button>
+                </form>
+            </div>
+        </section>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb
+                =!1m18!1m12!1m3!1d4291.745453141256!2d
+                77.39914006293347!3d28.504393188935435!
+                2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1
+                !3m3!1m2!1s0x390ce626851f7009%3A0x62118
+                5133cfd1ad1!2sGeeksforGeeks%20%7C%20
+                Coding%20Classes%20%7C%20Noida!5e0!3m2!1
+                sen!2sin!4v1725395799894!5m2!1sen!2sin" width="600" height="450" style="border: 0; width: 100%;"
+                allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+    <!-- form with map section  -->
+</template>
+<style scoped>
+.address-item {
+    padding: 2rem;
+    border: 1px solid var(--border-color);
+    text-align: center;
+    font-family: var(--nunito-font);
+}
+
+.address-item p {
+    font-family: var(--nunito-font);
+    color: var(--text-light-color);
+}
+
+.contact-form {
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    background-color: var(--secondary-color);
+    z-index: 999;
+}
+
+.contact-form form input,
+select,
+textarea {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    border: 2px solid var(--border-color);
+}
+
+@media (min-width: 992px) {
+    .contact-form {
+        padding: 2rem;
+    }
+}
+</style>
