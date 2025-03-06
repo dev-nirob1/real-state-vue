@@ -1,6 +1,6 @@
 <template>
-  <!-- call to action section  -->
-  <div class="cta-wrapper">
+    <!-- call to action section  -->
+    <div class="cta-wrapper">
         <div class="call-to-action">
             <div class="cta flex align-center items-center justify-between">
                 <div class="">
@@ -111,3 +111,111 @@
     </footer>
     <!-- footer ends here  -->
 </template>
+<style scoped>
+.cta-wrapper {
+  position: relative;
+  margin-top: 10rem;
+}
+
+.call-to-action {
+  padding: 3rem;
+  background-color: var(--footer-bg);
+}
+
+.cta {
+  flex-direction: column;
+  gap: 2rem;
+  width: 90%;
+  max-width: 1340px;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  padding: var(--cta-padding);
+  font-family: var(--nunito-font);
+  position: absolute;
+  left: 50%;
+  top: 0;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+}
+footer {
+    font-family: var(--popins-font);
+    background-color: var(--footer-bg);
+    color: var(--secondary-color);
+    position: relative;
+}
+
+.wrapper {
+    padding: var(--footer-wrapper);
+}
+
+.footer-links li:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.footer-links li {
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-links li:hover {
+    color: var(--primary-color);
+}
+
+.footer-links li::before {
+    content: "//";
+    position: absolute;
+    left: -1rem;
+    font-size: 16px;
+    color: transparent;
+    transition: color 0.3s ease-in-out, content 0.3s ease-in-out;
+}
+
+.footer-links li:hover::before {
+    content: "//";
+    color: var(--primary-color);
+}
+
+.newsletter input {
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    outline: none;
+    border: none;
+    border: 1px solid var(--border-color);
+}
+
+.footer-btn {
+    padding: 1rem 2rem;
+    outline: none;
+    border: none;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+.footer-bottom {
+    background-color: var(--bottom-footer-bg);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-bottom ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+}
+
+@media (min-width: 992px) {
+    .cta {
+        flex-direction: row;
+    }
+
+    .footer-bottom {
+        flex-direction: row;
+    }
+}
+</style>

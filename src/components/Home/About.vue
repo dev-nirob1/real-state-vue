@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import SubTitle from '../shared/SubTitle.vue';
+import Title from '../shared/Title.vue';
+
+</script>
+
 <template>
       <section class="container py-4">
             <div class="large-2 align-center gap-2">
@@ -20,12 +26,12 @@
                 <div>
                     <!-- section header div starts -->
                     <div>
-                        <h5 class="sub-title">
+                        <SubTitle>
                             About Us
-                        </h5>
-                        <h3 class="title text-dark">
+                        </SubTitle>
+                        <Title>
                             The Leading Real Estate Rental Marketplace.
-                        </h3>
+                        </Title>
                     </div>
                     <!-- section header div ends -->
                     <p class="text-light mb-1">Over 39,000 people work for us in more than 70 countries
@@ -70,18 +76,12 @@
             </div>
         </section>
 </template>
+
 <style scoped>
 .video-image {
   width: 150px;
   position: absolute;
   bottom: 100px;
-}
-
-.btn-center-align {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .about-icons {
