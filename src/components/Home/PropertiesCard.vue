@@ -1,61 +1,46 @@
 <template>
     <div class="properties-card">
-        <div class="relative image-responsive">
-            <div class="relative card-image">
-                <a class="image-responsive" href="#">
-                    <img class="image-responsive title-image" src="./../../assets/menu-banner-1.jpg" alt="">
-                </a>
+                <div class="relative title-image">
+                    <img class="image-responsive" src="./../../assets/about-3.jpg" alt="">
+                </div>
+                <div class="text-light p-1">
+                    <span class="primary-color">ON GOING</span>
+                    <h4 class="heading-4 my-1 text-dark"><a href="#">Modern Apartments</a></h4>
+                    <a class="flex mb-1" href="#">
+                        <span class="material-symbols-outlined location-icon">
+                            location_on
+                        </span>
+                        <small>Brooklyn, New York, United States</small>
+                    </a>
+                    <div>
+                        <p><strong>3.8 </strong>Katha, Height: <strong>G 7</strong></p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <span class="badge rent">FOR RENT</span>
-            </div>
-        </div>
-        <div class="text-light p-1">
-            <p class="primary-color"> <span class="para-md-size font-bold">$34,900</span>/Month</p>
-            <h4 class="heading-4 text-dark my-1"><a href="#">Modern Apartments</a></h4>
-            <p class="line-height-1">Beautiful Huge 1 Family House In Heart Of <br>
-                Westbury. Newly Renovated With New Wood</p>
-            <div class="all-3 align-center gap-1 icon-container">
-                <small class="card-icon">
-                    <small class="flex items-center">3 <span class="material-symbols-outlined">
-                            king_bed
-                        </span> </small>
-                    <span>Bedrooms</span>
-                </small>
-                <small class="card-icon">
-                    <small class="flex items-center">2 <span class="material-symbols-outlined">
-                            <span class="material-symbols-outlined">
-                                bathtub
-                            </span>
-                        </span></small>
-                    <span>Bathrooms</span>
-                </small>
-                <small class="card-icon">
-                    <small class="flex items-center">335 <span class="material-symbols-outlined">
-                            king_bed
-                        </span></small>
-                    <span>square Ft</span>
-                </small>
-            </div>
-        </div>
-    </div>
 </template>
 
 <style scoped>
 .properties-card {
     box-shadow: var(--properties-card-shadow);
     overflow: hidden;
-    transition: all .3s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+.properties-card .title-image{
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
 }
 
 .properties-card img {
-    overflow: hidden;
+    height: 100%;
+    width: 100%;
     transition: all .5s ease-in-out;
 }
+.properties-card a{
+    transition: all .3s ease-in-out;
+}
 
-.properties-card:hover .title-image {
-    width: 100%;
-    height: auto;
+.properties-card:hover img {
     transform: scale(1.1);
 }
 
@@ -63,7 +48,7 @@
     color: var(--primary-color);
 }
 
-.icon-container {
+/* .icon-container {
     color: var(--light-color);
     margin: 1rem 0;
 }
@@ -79,15 +64,6 @@
     right: 1rem;
     font-size: 14px;
     padding: 4px 8px;
-}
+} */
 
-.properties-card .sale {
-    background-color: #54ecad;
-    color: var(--secondary-color);
-}
-
-.properties-card .rent {
-    color: var(--secondary-color);
-    background-color: var(--primary-color);
-}
 </style>
