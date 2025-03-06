@@ -21,3 +21,19 @@ import Title from './Title.vue';
         </div>
     </div>
 </template>
+<style scoped>
+.page-title p {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+}
+
+.page-title a {
+  transition: color .3s ease-in-out;
+  color: var(--text-light-color);
+}
+
+.page-title a:hover {
+  color: var(--primary-color);
+}
+</style>

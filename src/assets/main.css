@@ -171,21 +171,6 @@ a {
   margin-bottom: 1rem;
 }
 
-.page-title p {
-  display: flex;
-  align-items: center;
-  font-weight: 700;
-}
-
-.page-title a {
-  transition: color .3s ease-in-out;
-  color: var(--text-light-color);
-}
-
-.page-title a:hover {
-  color: var(--primary-color);
-}
-
 /*--------------- typography ------------- */
 /* font-size  */
 .title {
@@ -369,7 +354,7 @@ a {
       --section-bottom-gap: 4rem;
       --header-padding: 0 3rem;
       --section-padding: 2rem 3rem;
-      --page-title-padding: 1rem 3rem;
+      /* --page-title-padding: 1rem 3rem; */
       --tab-panel-padding: 1rem 2.5rem;
       --appartment-content-padding: 2rem;
       --cta-padding: 3rem;
@@ -388,7 +373,7 @@ a {
       --btn-padding: 1rem 2.5rem;
       /* --footer-wrapper: 6rem 2rem 2rem 2rem; */
       --header-padding: 0 5rem;
-      --page-title-padding: 1rem 5rem;
+      /* --page-title-padding: 1rem 5rem; */
       --tab-panel-padding: 1rem 4rem;
       --section-bottom-gap: 6rem;
       --section-padding: 4rem 5rem;
