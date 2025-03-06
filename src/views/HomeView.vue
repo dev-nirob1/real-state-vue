@@ -1,5 +1,5 @@
 <script setup>
-import About from '@/components/Home/About.vue';
+import About from '@/components/shared/About.vue';
 import AboutUs from '@/components/Home/AboutUs.vue';
 import Aminities from '@/components/Home/Aminities.vue';
 import ApartmentSketch from '@/components/Home/ApartmentSketch.vue';

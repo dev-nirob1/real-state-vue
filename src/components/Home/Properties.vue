@@ -1,7 +1,7 @@
 <script setup lang="ts">
+import PropertiesCard from '../shared/PropertiesCard.vue';
 import SubTitle from '../shared/SubTitle.vue';
 import Title from '../shared/Title.vue';
-import PropertiesCard from './PropertiesCard.vue';
 
 </script>
 
