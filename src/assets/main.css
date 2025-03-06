@@ -69,7 +69,7 @@ body {
   --header-padding: 0 1rem;
   --section-bottom-gap: 3rem;
   --section-padding: 2rem 1rem;
-  --page-title-padding: 1rem 1rem;
+  /* --page-title-padding: 1rem 1rem; */
   --tab-panel-padding: 1rem .8rem;
   --footer-wrapper: 6rem 2rem 2rem 2rem;
   --appartment-content-padding: 1rem;
@@ -169,10 +169,6 @@ a {
   border-radius: 1.5rem;
   display: inline-block;
   margin-bottom: 1rem;
-}
-
-.page-title {
-  padding: var(--page-title-padding);
 }
 
 .page-title p {

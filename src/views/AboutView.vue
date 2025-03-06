@@ -1,13 +1,16 @@
 <script setup lang="ts">
 import Statistics from '@/components/Home/Statistics.vue';
 import About from '@/components/shared/About.vue';
+import PageTitle from '@/components/shared/PageTitle.vue';
 
 </script>
 
 <template>
+  <PageTitle>
+    About Us
+  </PageTitle>
   <About />
-  <!-- about-us section ends -->
-
+  
   <!-- stats section starts -->
   <div>
     <div class="large-2">
